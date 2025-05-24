@@ -53,7 +53,6 @@ for idx, text in enumerate(prompts):
 
     generated_imgs = result.images
 
-    # 构建拼接图像画布
     stitched_image = Image.new("RGB", (images_per_row * output_size[0], output_size[1]))
 
     for i, img in enumerate(generated_imgs[:images_per_row]):
